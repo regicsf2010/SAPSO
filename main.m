@@ -1,11 +1,10 @@
 clear, clc, close
-setGlobal(0)
 
 %% Parameter settings
 
 %%%%%%%%%%%%% Test function %%%%%%%%%%%%%
 DIM = 10; % number of dimensions
-FNAME = 'ackley'; % name of the test function ('name'.m)
+FNAME = 'griewank'; % name of the test function ('name'.m)
 RANGE = [-47.5, 47.5]; % search domain
 f = str2func(FNAME); % handle
 
@@ -71,4 +70,3 @@ disp(['Iteration: ' num2str(i)])
 disp('Solution found')
 disp(['X: [' num2str(G.X) ']'])
 disp(['Y: [' num2str(G.XFIT) ']'])
-disp(['Eval: [' num2str(getGlobal) ']'])
